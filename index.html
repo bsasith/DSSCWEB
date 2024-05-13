@@ -264,14 +264,34 @@
 {
     margin:35px;
 }
-.newsimg{
-    margin:20px;
-}
+
+
+    .newsimg{
+            margin: 40px;
+            float: left;
+            height:250px;
+            width: 250px;
+        }
+        .newsdescription{
+            padding: 55px;
+            float: left;
+            height:250px;
+            width: 500px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+    
     </style>
 </head>
 
 <body>
     <div class="toplogo" style="float: left;">
+
         <img src="D-S-SENANAYAKE.png" alt="">
     </div>
     <div class="topnav">
@@ -400,17 +420,39 @@
                 <h1 class="middlerow1heading2">Stay Curious with our School Updates</h1>
             </div>
             
-
-            <div class="news1" >
-                <div class="newsimg" style="float: left">
-                    <img src="Screenshot 2024-05-13 104139.png" alt="">
-                </div>
-                <div class="newsdescription" style="float: left;">
-                    <h3 style="font-weight: bold;float: left;">Men's S9 400M Freestyle at the 2023 Asian Para Games</h3>
-                    <h4 style="float: left;">Congratulations to our proud Senanayakian, Naweed Raheem on his Bronze Medal in the Men’s S9 400M Freestyle
-                        at the 2023 Asian Para Games.</h4>
-                </div>
+<table>
+    <tr>
+        <td>
+        <div class="news1" >
+            <div class="newsimg" style="float: left">
+                <img src="Screenshot 2024-05-13 104139.png" alt="">
             </div>
+            <div class="newsdescription" style="float: left;">
+                <h3 style="font-weight: bold;float: left;">Men's S9 400M Freestyle at the 2023 Asian Para Games</h3>
+                <h4 style="float: left;">Congratulations to our proud Senanayakian, Naweed Raheem on his Bronze Medal in the Men’s S9 400M Freestyle
+                    at the 2023 Asian Para Games.</h4>
+            </div>
+        </div>
+    </td>
+    </tr>
+    <tr>
+        <td>
+        <div class="news1" >
+            <div class="newsimg" style="float: left">
+                <img src="Screenshot 2024-05-13 104244.png" alt="">
+            </div>
+            <div class="newsdescription" style="float: left;">
+                <h3 style="font-weight: bold;float: left;">Best Seargent Category at Rantabe Competition</h3>
+                <h4 style="float: left;">Seargent Sandeepa WPAD became the 1st Runners-Up – Best Seargent Category at Rantabe competition.
+                    Congratulations!.</h4>
+            </div>
+        </div>
+    </td>
+    </tr>
+</table>
+        
+            
+   
 
 </body>
 

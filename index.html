@@ -1,11 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSSC</title>
+    <title>DSSC Home page</title>
+    <style>
+        .toplogo {
+            margin-top: 0px;
+        }
+
+        .topnav {
+            margin-top: 10px;
+        }
+
+
+         ul.nav{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li.nav1{
+            float: left;
+        }
+
+        a.nav2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+            text-decoration: none;
+            float: left;
+            color: rgb(255, 251, 2);
+            text-align: center;
+            padding: 20px 25px;
+        }
+
+        a:hover {
+            background-color: rgb(255, 251, 2);
+            color: rgb(0, 0, 0);
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            padding-top: 65px;
+            max-width: 75%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .threedots {
+            margin-top: 20px;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .extramiddle {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+            padding-top: 20px;
+            padding-left: 40px;
+            margin-top: 30px;
+        }
+
+        .box {
+            width: 250px;
+            height: 200px;
+            margin-right: 50px;
+           
+            border-style: solid 1px;
+            border-color: rgb(228, 224, 0);
+            box-shadow: 0 0 20px 20px rgb(228, 224, 0);
+            color: rgb(226, 222, 0);
+            border-radius: 10px;
+        }
+        .box:hover{
+            background-color:#3f3d3d;
+        }
+
+        .boximg {
+            padding-top: 25px;
+            height: 75px;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            color: burlywood;
+            filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .firstcolumn{
+            padding: 20px;
+            width: 33%;
+        }
+       p.hh {
+        line-height: 1.8;
+       }
+        ul.Mission {
+            padding-left:40px;
+            line-height: 1.8;
+
+        }
+        div.secondcolumn{
+            padding-top: 60px;
+            padding-left: 15px;
+            width: 33%;
+        }
+        div.thirdcolumn{
+            padding: 20px;
+            width: 33%;
+        }
+        p {
+            padding: 20px;
+            line-height: 1.8;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="toplogo" style="float: left;">
+        <img src="D-S-SENANAYAKE.png" alt="">
+    </div>
+    <div class="topnav">
+        <ul class="nav">
+            <li class="nav1"><a  class="nav2" href="#">Home</a></li>
+            <li class="nav1"> <a class="nav2" href="#">News</a></li>
+            <li class="nav1"><a class="nav2" href="#">Events</a></li>
+            <li class="nav1"><a class="nav2" href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="middle">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    1/3
+                </div>
+                <img src="2-main.png" alt="" style="width: 100%">
+                <div class="text">Hon. D.S Senanayake</div>
+
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    2/3
+                </div>
+                <img src="3main-scaled.jpg" alt="" style="width: 100%">
+                <div class="text">Birth Day</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">
+                    2/3
+                </div>
+                <img src="1-main.jpg" alt="" style="width: 100%">
+                <div class="text">Prefects Day</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div class="threedots" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <Script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </Script>
+    </div>
+    <div class="extramiddle">
+        <div class="box" style="float: left;margin-top: 35px ">
+            <img src="user.svg" class="boximg" alt="">
+            <h3 class="boxheading" style="text-align: center; padding-top: 5px;">Community</h3>
+            <h4 class="boxinfo" style="text-align: center;">Explore clubs <br>and societies</h4>
+        </div>
+        <div class="box" style="float: left; margin-left: 35px; margin-top: 35px ;">
+            <img src="read-book-icon.svg" class="boximg" alt="">
+            <h3 class="boxheading" style="text-align: center; padding-top: 5px;">Acadamics</h3>
+            <h4 class="boxinfo" style="text-align: center;">Online Resources <br>to Download</h4>
+        </div>
+        <div class="box" style="float: left; margin-left: 35px; margin-top: 35px ;">
+            <img src="notification-bell-svgrepo-com.svg" class="boximg" alt="">
+            <h3 class="boxheading" style="text-align: center; padding-top: 5px;">Notice</h3>
+            <h4 class="boxinfo" style="text-align: center;">News & <br>Announcements</h4>
+        </div>
+        <div class="box" style="float: left; margin-left: 35px; margin-top: 35px ;">
+            <img src="read-book-icon.svg" class="boximg" alt="">
+            <h3 class="boxheading" style="text-align: center; padding-top: 5px;">Achivements</h3>
+            <h4 class="boxinfo" style="text-align: center;">With Effort, <br> Skill & Courage </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="firstcolumn" style="float: left;">
+           <h2>Mission is to</h2> <p class="hh">
+                Develop skilled and competent sons of D.S. with a sense of understanding and compassion for others in an
+                amicable multi ethnic atmosphere that fosters national and religious harmony, possessing a balanced
+                personality-gaining total learning experience to become global citizens.
+
+            <ul class=" Mission">
+                <li>Sense of understanding</li>
+                <li>Compassion for others</li>
+                <li>Balanced personality</li>
+                <li>Total learning experience</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="secondcolumn" style="float: left;">
+            <img src="ds middle.png" alt="">
+        </div>
+
+        <div class="thirdcolumn" style="float: left;">
+            <p>DSSC’s shared vision is to create proud sons of D.S. to the society, nurtured with a passion for knowledge, competence and skills whilst enabling each to confront with global challenges.
+
+                D.S. Senanayake College shines as the second-largest multi-ethnic school in Sri Lanka, welcoming students from diverse ethnic backgrounds. By fostering unity and harmony among its students, it champions inclusivity and celebrates cultural diversity. Together, let’s pave the way for a brighter future of Mother Sri Lanka.
+                
+                </p>
+             
+         </div>
+    </div>
+
 </body>
+
 </html>

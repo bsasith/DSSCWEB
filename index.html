@@ -284,8 +284,49 @@
             clear: both;
             display: table;
         }
+        .registration
+        {
+            margin: 55px;
+        }
+        .registrationform
+        {float: left;
+            width: 50%;
+            height:425px;
+            background-color: #bbb;
+        }
+        .regiterdescription{
+            float: left;
+            background-color: #333;
+            height:425px;
+            width:50%
+
+        }
+        input[type=text], select{
+            width: 50%;
+            padding: 12px 20px;
+            margin:8px 55px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius:4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width:50%;
+            background-color: yellow;
+            color: rgb(0, 0, 0);
+            padding: 14px 20px;
+            margin:8px 55px;
+            border-width: 0px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: large;
         
-    
+        }
+        input[type=submit]:hover{
+            background-color: rgb(161, 151, 0);
+        }
+        
     </style>
 </head>
 
@@ -450,7 +491,27 @@
     </td>
     </tr>
 </table>
+<div class="registration">
+    <div class="registrationform">
+            <h1 style="margin: 30px;">Online registration</h1>
+            <div class="form1">
+                <form action="">
+                <input type="text"  placeholder=" Enter your Name">
+                <input type="text" placeholder="Class Room">
+                <input type="text" placeholder="Contact Number">
+                <input type="text" placeholder="E-mail">
+                <input type="submit" value="Sign Up">
+            </form>
+            </div>
+            
+    </div>
+    <div class="regiterdescription">
+        <h1 style="margin-top:30px;margin-left: 30px; color: white;">Hear it firsthand,</h1>
+        <br>
+        <h4 style="margin-top:20px;margin-left: 30px; color: #ccc;">There are no upcoming events at this time.</h4>
         
+    </div>
+</div>
             
    
 
